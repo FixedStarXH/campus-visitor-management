@@ -14,7 +14,7 @@ target/
 *.log
 
 # 敏感配置（含数据库密码 / JWT 密钥，禁止提交到版本库）
-renren-fast/src/main/resources/application.yml
-renren-fast/src/main/resources/application-dev.yml
-renren-fast/src/main/resources/application-test.yml
-renren-fast/src/main/resources/application-prod.yml
+backend/src/main/resources/application.yml
+backend/src/main/resources/application-dev.yml
+backend/src/main/resources/application-test.yml
+backend/src/main/resources/application-prod.yml
