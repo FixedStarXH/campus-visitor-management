@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.ers.dao.ErsUserDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="io.renren.modules.ers.entity.ErsUserEntity">
+        <id column="user_id" property="userId" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="salt" property="salt" />
+        <result column="real_name" property="realName" />
+        <result column="mobile" property="mobile" />
+        <result column="email" property="email" />
+        <result column="status" property="status" />
+        <result column="blacklist_flag" property="blacklistFlag" />
+        <result column="blacklist_expire_time" property="blacklistExpireTime" />
+        <result column="blacklist_reason" property="blacklistReason" />
+        <result column="last_login_time" property="lastLoginTime" />
+        <result column="last_login_ip" property="lastLoginIp" />
+        <result column="register_time" property="registerTime" />
+        <result column="is_promoted" property="isPromoted" />
+        <result column="create_time" property="createTime" />
+        <result column="create_user_id" property="createUserId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, username, password, salt, real_name, mobile, email, status, blacklist_flag, 
+        blacklist_expire_time, blacklist_reason, last_login_time, last_login_ip, register_time, 
+        is_promoted, create_time, create_user_id
+    </sql>
+
+</mapper>
