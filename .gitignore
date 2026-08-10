@@ -1,0 +1,14 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 构建产物 / 依赖
+node_modules/
+dist/
+target/
+*.log
